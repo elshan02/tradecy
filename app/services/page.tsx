@@ -14,14 +14,14 @@ const ALL_SERVICES = [
   {
     id: "bathroom",
     title: "Bathroom Renovations",
-    href: "/bathroom",
+    href: "/services/bathroom",
     summary:
       "Walk-in showers, waterproof tile systems, freestanding tubs, vanities, and heated floors.",
   },
   {
     id: "kitchen",
     title: "Kitchen Renovations",
-    href: "/kitchen",
+    href: "/services/kitchen",
     summary:
       "Open-concept wall removals, custom cabinetry, quartz countertops, islands, and tile backsplashes.",
   },

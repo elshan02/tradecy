@@ -3,43 +3,37 @@ import Link from "next/link";
 const SERVICES = [
   {
     title: "Bathroom Renovations",
-    href: "/bathroom",
+    href: "/services/bathroom",
     description:
       "Walk-in glass showers, waterproof tile work, freestanding tubs, and modern vanities in London, ON.",
   },
   {
     title: "Kitchen Renovations",
-    href: "/kitchen",
+    href: "/services/kitchen",
     description:
       "Open-concept kitchen remodeling, custom cabinetry, quartz countertops, islands, and backsplashes.",
   },
   {
     title: "Basement Renovations",
-    href: "/basement",
+    href: "/services/basement",
     description:
       "Finished family rec rooms, extra bedrooms, 3-piece bathrooms, wet bars, and legal secondary suites.",
   },
   {
-    title: "Full Home Renovations",
-    href: "/residential",
-    description:
-      "Whole-home remodeling, structural wall removals, flooring, drywall, trim carpentry, and additions.",
-  },
-  {
     title: "Commercial Renovations",
-    href: "/commercial",
+    href: "/services/commercial",
     description:
       "Office build-outs, retail store remodeling, commercial framing, washrooms, and interior fit-outs.",
   },
   {
     title: "Interior & Exterior Painting",
-    href: "/services#painting",
+    href: "/services/painting",
     description:
       "Drywall prep, wall and ceiling painting, trim and door spraying, cabinet refinishing, and staining.",
   },
   {
     title: "Decks & Fences",
-    href: "/services#decks-fences",
+    href: "/services/decks-fences",
     description:
       "Custom wood and composite decks, pergolas, porch rebuilds, and privacy fences in London, ON.",
   },

@@ -80,9 +80,12 @@ export default function RootLayout({
             <nav className="nav-links">
               <Link href="/">Home</Link>
               <Link href="/services">Services</Link>
-              <Link href="/kitchen">Kitchen</Link>
-              <Link href="/bathroom">Bathroom</Link>
-              <Link href="/basement">Basement</Link>
+              <Link href="/services/kitchen">Kitchen</Link>
+              <Link href="/services/bathroom">Bathroom</Link>
+              <Link href="/services/basement">Basement</Link>
+              <Link href="/services/commercial">Commercial</Link>
+              <Link href="/services/painting">Painting</Link>
+              <Link href="/services/decks-fences">Decks & Fences</Link>
               <Link href="/projects">Projects</Link>
               <Link href="/about">About</Link>
             </nav>
