@@ -43,26 +43,83 @@ export default function HomePage() {
   return (
     <div>
       {/* 1. Hero Section */}
-      <section className="hero">
-        <div className="container">
-          <span className="eyebrow">Design • Build • Renovate — London, Ontario</span>
-          <h1 className="page-title">
-            Home Renovations &amp; General Contracting in London, Ontario
-          </h1>
-          <p className="lead-text">
-            Tradecy Inc. delivers residential and commercial renovations across
-            London, ON—backed by architectural and engineering expertise.
-          </p>
-          <div className="button-group">
-            <a href="#free-estimate" className="btn-primary">
-              Get a Free Estimate
-            </a>
-            <Link href="/projects" className="btn-secondary">
-              View Projects
-            </Link>
-          </div>
-        </div>
-      </section>
+      <section id="free-estimate" className="hero">
+  <div className="container hero-grid">
+    {/* Left Column: SEO Headline & Trust */}
+    <div className="hero-content">
+      <span className="eyebrow">
+        ★ 4.9 Rated Contractor • London, Ontario
+      </span>
+      <h1 className="page-title">
+        Home Renovations &amp; General Contracting in London, Ontario
+      </h1>
+      <p className="lead-text">
+        Tradecy Inc. designs, builds, and renovates custom kitchens, bathrooms,
+        finished basements, full homes, decks, and commercial spaces across
+        London, ON.
+      </p>
+    </div>
+
+    {/* Right Column: Free Quote Card */}
+    <div className="hero-form-card">
+      <h2 className="hero-form-title">Get a Free Renovation Quote</h2>
+      <p className="hero-form-subtitle">
+        Serving London, Byron, Masonville, Oakridge &amp; St. Thomas.
+      </p>
+
+      <form className="quote-form" style={{ marginTop: "18px" }}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name *"
+          required
+          className="form-input"
+        />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number *"
+          required
+          className="form-input"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address "
+          className="form-input"
+        />
+        <input
+          type="text"
+          name="postalCode"
+          placeholder="Postal Code (e.g. N6G 0L7) *"
+          required
+          className="form-input"
+        />
+        {/* <select name="service" className="form-input full-span" required>
+          <option value="">Select Service Needed *</option>
+          <option value="Kitchen Renovation">Kitchen Renovation</option>
+          <option value="Bathroom Renovation">Bathroom Renovation</option>
+          <option value="Basement Renovation">Basement Renovation</option>
+          <option value="Full Home Renovation">Full Home Renovation</option>
+          <option value="Commercial Renovation">Commercial Renovation</option>
+          <option value="Interior & Exterior Painting">
+            Interior &amp; Exterior Painting
+          </option>
+          <option value="Decks & Fences">Decks &amp; Fences</option>
+        </select> */}
+        <textarea
+          name="message"
+          rows={3}
+          placeholder="Briefly describe your project..."
+          className="form-textarea full-span"
+        />
+        <button type="submit" className="btn-primary full-span">
+          Request Free Quote
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
 
       {/* 2. Services Overview Grid */}
       <section className="section">

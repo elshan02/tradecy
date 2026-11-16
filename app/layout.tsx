@@ -79,20 +79,28 @@ export default function RootLayout({
 
             <nav className="nav-links">
               <Link href="/">Home</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/services/kitchen">Kitchen</Link>
-              <Link href="/services/bathroom">Bathroom</Link>
-              <Link href="/services/basement">Basement</Link>
-              <Link href="/services/commercial">Commercial</Link>
-              <Link href="/services/painting">Painting</Link>
-              <Link href="/services/decks-fences">Decks & Fences</Link>
+
+              <div className="nav-dropdown">
+                <Link href="/services" className="nav-dropdown-trigger">
+                Services <span className="nav-arrow" aria-hidden="true">▾</span>
+                </Link>
+                <div className="nav-dropdown-menu">
+                  <Link href="/services/kitchen">Kitchen</Link>
+                  <Link href="/services/bathroom">Bathroom</Link>
+                  <Link href="/services/basement">Basement</Link>
+                  <Link href="/services/commercial">Commercial</Link>
+                  <Link href="/services/painting">Painting</Link>
+                  <Link href="/services/decks-fences">Decks & Fences</Link>
+                </div>
+              </div>
+
               <Link href="/projects">Projects</Link>
               <Link href="/about">About</Link>
             </nav>
 
-            <a href="tel:+12262245070" className="btn-primary">
+            {/* <a href="tel:+12262245070" className="btn-primary">
               226-224-5070
-            </a>
+            </a> */}
           </div>
         </header>
 
