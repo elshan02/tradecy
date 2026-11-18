@@ -159,7 +159,7 @@ a {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 24px;
-  height: 76px;
+  height: 96px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -173,7 +173,7 @@ a {
 }
 
 .brand-logo {
-  height: 46px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   display: block;
