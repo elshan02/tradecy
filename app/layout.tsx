@@ -123,12 +123,12 @@ export default function RootLayout({
             <div>
               <h2 className="footer-heading">Services</h2>
               <ul className="footer-list">
-                <li><Link href="/kitchen">Kitchen Renovations</Link></li>
-                <li><Link href="/bathroom">Bathroom Renovations</Link></li>
-                <li><Link href="/basement">Basement Renovations</Link></li>
-                <li><Link href="/residential">Full Home Renovations</Link></li>
-                <li><Link href="/commercial">Commercial Renovations</Link></li>
-                <li><Link href="/services">Painting, Decks &amp; Fences</Link></li>
+                <li><Link href="/services/kitchen">Kitchen Renovations</Link></li>
+                <li><Link href="/services/bathroom">Bathroom Renovations</Link></li>
+                <li><Link href="/services/basement">Basement Renovations</Link></li>
+                <li><Link href="/services/residential">Full Home Renovations</Link></li>
+                <li><Link href="/services/commercial">Commercial Renovations</Link></li>
+                <li><Link href="/services/painting">Painting, Decks &amp; Fences</Link></li>
               </ul>
             </div>
 
