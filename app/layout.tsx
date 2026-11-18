@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -71,10 +73,14 @@ export default function RootLayout({
         <header className="site-header">
           <div className="navbar">
             <Link href="/" className="brand">
-              <span className="brand-name">
-                TRADECY <span className="brand-accent">INC.</span>
-              </span>
-              <span className="brand-tagline">Design • Build • Renovate</span>
+              <Image
+                src="/logo.png"
+                alt="Tradecy Inc. — Home Renovations in London, Ontario"
+                width={160}
+                height={48}
+                priority
+                className="brand-logo"
+              />
             </Link>
 
             <nav className="nav-links">
