@@ -74,7 +74,7 @@ export default function RootLayout({
           <div className="navbar">
             <Link href="/" className="brand">
               <Image
-                src="/logo.png"
+                src="/tradecy-logo.png"
                 alt="Tradecy Inc. — Home Renovations in London, Ontario"
                 width={160}
                 height={48}
@@ -102,6 +102,7 @@ export default function RootLayout({
 
               <Link href="/projects">Projects</Link>
               <Link href="/about">About</Link>
+              <Link href="/blog">Blog</Link>
             </nav>
 
             {/* <a href="tel:+12262245070" className="btn-primary">
