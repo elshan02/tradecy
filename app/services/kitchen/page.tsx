@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import ServiceReviews, { type ManualReview } from "@/components/ServiceReviews";
+
 export const metadata: Metadata = {
   title: "Kitchen Renovations in London, Ontario",
   description:
@@ -8,6 +10,47 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services/kitchen",
   },
+};
+
+const kitchenReviews: ManualReview[] = [
+  {
+    author: "Sarah O'Connor",
+    date: "Google Review",
+    rating: 5,
+    text: "Tradecy Handyman Services did a great job with my kitchen renovation. Very professional and reliable—thank you!"
+  },
+  // {
+  //   author: "[Client Name 2]",
+  //   date: "Google Review",
+  //   rating: 5,
+  //   text: "[Paste a second kitchen renovation review from Google Maps here]",
+  // },
+  // {
+  //   author: "[Client Name 3]",
+  //   date: "Google Review",
+  //   rating: 5,
+  //   text: "[Paste a third kitchen renovation review from Google Maps here]",
+  // }
+  
+];
+
+const KitchenSchemaJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Kitchen Renovations in London, Ontario",
+  serviceType: "Kitchen Remodeling",
+  provider: {
+    "@type": "HomeAndConstructionBusiness",
+    name: "Tradecy Inc.",
+    telephone: "+1-226-224-5070",
+    url: "https://tradecy.ca",
+  },
+  areaServed: {
+    "@type": "City",
+    name: "London, Ontario",
+  },
+  description:
+    "Custom kitchen renovations in London, Ontario including layout redesign, custom cabinetry, quartz countertops, islands, tile backsplashes, plumbing, and lighting.",
 };
 
 export default function KitchenPage() {
@@ -41,10 +84,13 @@ export default function KitchenPage() {
 
         {/* 3. Imported Kitchen Reviews Placeholder */}
         <div style={{ marginTop: "56px" }}>
-          <h2 className="section-title">Kitchen Renovation Reviews</h2>
-          <div className="reviews-placeholder">
-            [Imported Kitchen-Filtered Google Reviews Render Here]
-          </div>
+          <h2 className="section-title">
+            What London, Ontario Homeowners Say About Our Kitchen Renovations
+          </h2>
+          <ServiceReviews
+            reviews={kitchenReviews}
+            googleMapsUrl="https://www.google.com/maps/search/?api=1&query=Tradecy+Inc+London+Ontario"
+          />
         </div>
 
         {/* 4. CTA Banner */}

@@ -94,7 +94,7 @@ export default function RootLayout({
                   <Link href="/services/kitchen">Kitchen</Link>
                   <Link href="/services/bathroom">Bathroom</Link>
                   <Link href="/services/basement">Basement</Link>
-                  <Link href="/services/commercial">Commercial</Link>
+                  <Link href="/services/laundry">Laundry</Link>
                   <Link href="/services/painting">Painting</Link>
                   <Link href="/services/decks-fences">Decks & Fences</Link>
                 </div>
@@ -133,8 +133,9 @@ export default function RootLayout({
                 <li><Link href="/services/kitchen">Kitchen Renovations</Link></li>
                 <li><Link href="/services/bathroom">Bathroom Renovations</Link></li>
                 <li><Link href="/services/basement">Basement Renovations</Link></li>
+                <li><Link href="/services/laundry">Laundry Renovations</Link></li>
                 <li><Link href="/services/residential">Full Home Renovations</Link></li>
-                <li><Link href="/services/commercial">Commercial Renovations</Link></li>
+                {/* <li><Link href="/services/commercial">Commercial Renovations</Link></li> */}
                 <li><Link href="/services/painting">Painting, Decks &amp; Fences</Link></li>
               </ul>
             </div>
