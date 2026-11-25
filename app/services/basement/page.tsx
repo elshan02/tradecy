@@ -56,6 +56,12 @@ const BasementSchemaJsonLd = {
 export default function BasementPage() {
   return (
     <section className="section">
+        <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(BasementSchemaJsonLd),
+      }}
+      />
       <div className="container">
         {/* 1. SEO Header & Intro */}
         <header>

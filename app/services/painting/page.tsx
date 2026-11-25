@@ -56,6 +56,12 @@ const PaintingSchemaJsonLd = {
 export default function PaintingPage() {
   return (
     <section className="section">
+        <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(PaintingSchemaJsonLd),
+      }}
+      />
       <div className="container">
         {/* 1. SEO Header & Intro */}
         <header>

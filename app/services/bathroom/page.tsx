@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Custom bathroom renovations in London, ON by Tradecy Inc. Walk-in showers, vanities, tile work, waterproofing, and complete bathroom remodeling.",
   alternates: {
-    canonical: "/bathroom",
+    canonical: "/services/bathroom",
   },
 };
 
@@ -55,6 +55,12 @@ const BathroomSchemaJsonLd = {
 export default function BathroomPage() {
   return (
     <section className="section">
+      <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(BathroomSchemaJsonLd),
+      }}
+      />
       <div className="container">
         {/* 1. SEO Header & Intro */}
         <header>

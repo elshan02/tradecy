@@ -4,41 +4,41 @@ import Link from "next/link";
 import ServiceReviews, { type ManualReview } from "@/components/ServiceReviews";
 
 export const metadata: Metadata = {
-  title: "Kitchen Renovations in London, Ontario",
+  title: "Handyman services in London, Ontario",
   description:
-    "Upgrade your home with custom kitchen renovations in London, ON. Tradecy Inc. handles layout design, cabinetry, countertops, lighting, and flooring.",
+    "Upgrade your home with custom handyman renovations in London, ON. Tradecy Inc. handles layout design, cabinetry, countertops, lighting, and flooring.",
   alternates: {
-    canonical: "/services/residental",
+    canonical: "/services/handyman",
   },
 };
 
-const kitchenReviews: ManualReview[] = [
+const handymanReviews: ManualReview[] = [
   {
     author: "Sarah O'Connor",
     date: "Google Review",
     rating: 5,
-    text: "Tradecy Handyman Services did a great job with my kitchen renovation. Very professional and reliable—thank you!"
+    text: "Tradecy Handyman Services did a great job with my handyman project. Very professional and reliable—thank you!"
   },
   // {
   //   author: "[Client Name 2]",
   //   date: "Google Review",
   //   rating: 5,
-  //   text: "[Paste a second kitchen renovation review from Google Maps here]",
+  //   text: "[Paste a second handyman project review from Google Maps here]",
   // },
   // {
   //   author: "[Client Name 3]",
   //   date: "Google Review",
   //   rating: 5,
-  //   text: "[Paste a third kitchen renovation review from Google Maps here]",
+  //   text: "[Paste a third handyman project review from Google Maps here]",
   // }
   
 ];
 
-const KitchenSchemaJsonLd = {
+const HandymanSchemaJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Kitchen Renovations in London, Ontario",
-  serviceType: "Kitchen Remodeling",
+  name: "Handyman Services in London, Ontario",
+  serviceType: "Handyman Services",
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: "Tradecy Inc.",
@@ -50,45 +50,52 @@ const KitchenSchemaJsonLd = {
     name: "London, Ontario",
   },
   description:
-    "Custom kitchen renovations in London, Ontario including layout redesign, custom cabinetry, quartz countertops, islands, tile backsplashes, plumbing, and lighting.",
+    "Custom handyman projects in London, Ontario including layout redesign, custom cabinetry, quartz countertops, islands, tile backsplashes, plumbing, and lighting.",
 };
 
-export default function ResidentalPage() {
+export default function HandymanPage() {
   return (
     <section className="section">
+      {/* Renders the JSON-LD structured data in the HTML for Googlebot */}
+      <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(HandymanSchemaJsonLd),
+      }}
+      />
       <div className="container">
         {/* 1. SEO Header & Intro */}
         <header>
-          <span className="eyebrow">Residential — London, ON</span>
+          <span className="eyebrow">Handyman — London, ON</span>
           <h1 className="page-title">
-            Custom Residential Projects in London, Ontario
+            Custom Handyman Projects in London, Ontario
           </h1>
           <p className="lead-text">
-            Tradecy Inc. designs and builds custom residential projects across London,
+            Tradecy Inc. designs and builds custom handyman projects across London,
             Ontario—from open-concept wall removals and custom cabinetry to
             quartz countertops, tile backsplashes, islands, and lighting.
           </p>
         </header>
 
-        {/* 2. Residential Photo Gallery Skeleton */}
+        {/* 2. Handyman Photo Gallery Skeleton */}
         <div style={{ marginTop: "48px" }}>
-          <h2 className="section-title">Residential Project Gallery</h2>
+          <h2 className="section-title">Handyman Project Gallery</h2>
           <div className="grid-3">
             {[1, 2, 3, 4, 5, 6].map((item) => (
               <div key={item} className="gallery-box">
-                [Residential Photo {item} + Alt Text]
+                [Handyman Photo {item} + Alt Text]
               </div>
             ))}
           </div>
         </div>
 
-        {/* 3. Imported Residential Reviews Placeholder */}
+        {/* 3. Imported Handyman Reviews Placeholder */}
         <div style={{ marginTop: "56px" }}>
           <h2 className="section-title">
-            What London, Ontario Homeowners Say About Our Residential Projects
+            What London, Ontario Homeowners Say About Our Handyman Projects
           </h2>
           <ServiceReviews
-            reviews={kitchenReviews}
+            reviews={handymanReviews}
             googleMapsUrl="https://www.google.com/maps/search/?api=1&query=Tradecy+Inc+London+Ontario"
           />
         </div>
@@ -97,7 +104,7 @@ export default function ResidentalPage() {
         <div className="cta-banner">
           <div>
             <h2 className="card-title" style={{ color: "#ffffff" }}>
-              Planning a Residential Project in London, ON?
+              Planning a Handyman Project in London, ON?
             </h2>
             <p className="card-text" style={{ color: "#cbd5e1" }}>
               Contact Tradecy Inc. at 226-224-5070 for a free consultation.

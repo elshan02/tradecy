@@ -4,9 +4,9 @@ import Link from "next/link";
 import ServiceReviews, { type ManualReview } from "@/components/ServiceReviews";
 
 export const metadata: Metadata = {
-  title: "Kitchen Renovations in London, Ontario",
+  title: "Decks and Fences in London, Ontario",
   description:
-    "Upgrade your home with custom kitchen renovations in London, ON. Tradecy Inc. handles layout design, cabinetry, countertops, lighting, and flooring.",
+    "Upgrade your home with custom decks and fences in London, ON. Tradecy Inc. handles layout design, cabinetry, countertops, lighting, and flooring.",
   alternates: {
     canonical: "/services/decks-fences",
   },
@@ -17,19 +17,19 @@ const decksFencesReviews: ManualReview[] = [
     author: "Sarah O'Connor",
     date: "Google Review",
     rating: 5,
-    text: "Tradecy Handyman Services did a great job with my kitchen renovation. Very professional and reliable—thank you!"
+    text: "Tradecy Handyman Services did a great job with my deck and fence installation. Very professional and reliable—thank you!"
   },
   // {
   //   author: "[Client Name 2]",
   //   date: "Google Review",
   //   rating: 5,
-  //   text: "[Paste a second kitchen renovation review from Google Maps here]",
+  //   text: "[Paste a second deck and fence review from Google Maps here]",
   // },
   // {
   //   author: "[Client Name 3]",
   //   date: "Google Review",
   //   rating: 5,
-  //   text: "[Paste a third kitchen renovation review from Google Maps here]",
+  //   text: "[Paste a third deck and fence review from Google Maps here]",
   // }
   
 ];
@@ -50,12 +50,18 @@ const DeckFenceSchemaJsonLd = {
     name: "London, Ontario",
   },
   description:
-    "Custom kitchen renovations in London, Ontario including layout redesign, custom cabinetry, quartz countertops, islands, tile backsplashes, plumbing, and lighting.",
+    "Custom decks and fences in London, Ontario including layout redesign, custom cabinetry, quartz countertops, islands, tile backsplashes, plumbing, and lighting.",
 };
 
 export default function DeckFencesPage() {
   return (
     <section className="section">
+        <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(DeckFenceSchemaJsonLd),
+      }}
+      />
       <div className="container">
         {/* 1. SEO Header & Intro */}
         <header>

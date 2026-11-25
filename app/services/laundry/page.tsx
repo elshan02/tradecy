@@ -4,9 +4,9 @@ import Link from "next/link";
 import ServiceReviews, { type ManualReview } from "@/components/ServiceReviews";
 
 export const metadata: Metadata = {
-  title: "Kitchen Renovations in London, Ontario",
+  title: "Laundry Room Renovations in London, Ontario",
   description:
-    "Upgrade your home with custom kitchen renovations in London, ON. Tradecy Inc. handles layout design, cabinetry, countertops, lighting, and flooring.",
+    "Upgrade your home with custom laundry room renovations in London, ON. Tradecy Inc. handles layout design, cabinetry, countertops, lighting, and flooring.",
   alternates: {
     canonical: "/services/laundry",
   },
@@ -17,24 +17,24 @@ const laundryReviews: ManualReview[] = [
     author: "Sarah O'Connor",
     date: "November, 2025",
     rating: 5,
-    text: "Tradecy Handyman Services did a great job with my kitchen renovation. Very professional and reliable—thank you!"
+    text: "Tradecy Handyman Services did a great job with my laundry room renovation. Very professional and reliable—thank you!"
   },
   // {
   //   author: "[Client Name 2]",
   //   date: "Google Review",
   //   rating: 5,
-  //   text: "[Paste a second kitchen renovation review from Google Maps here]",
+  //   text: "[Paste a second laundry room renovation review from Google Maps here]",
   // },
   // {
   //   author: "[Client Name 3]",
   //   date: "Google Review",
   //   rating: 5,
-  //   text: "[Paste a third kitchen renovation review from Google Maps here]",
+  //   text: "[Paste a third laundry room renovation review from Google Maps here]",
   // }
   
 ];
 
-const KitchenSchemaJsonLd = {
+const LaundrySchemaJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Laundry Room Renovations in London, Ontario",
@@ -56,6 +56,12 @@ const KitchenSchemaJsonLd = {
 export default function LaundryPage() {
   return (
     <section className="section">
+      <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(LaundrySchemaJsonLd),
+      }}
+      />
       <div className="container">
         {/* 1. SEO Header & Intro */}
         <header>

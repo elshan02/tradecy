@@ -56,6 +56,12 @@ const KitchenSchemaJsonLd = {
 export default function KitchenPage() {
   return (
     <section className="section">
+      <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(KitchenSchemaJsonLd),
+      }}
+      />
       <div className="container">
         {/* 1. SEO Header & Intro */}
         <header>

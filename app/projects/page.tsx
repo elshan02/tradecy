@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 };
 
 const CATEGORIES = [
-  { title: "Kitchen Projects", href: "/kitchen" },
-  { title: "Bathroom Projects", href: "/bathroom" },
-  { title: "Basement Projects", href: "/basement" },
-  { title: "Residential / Full Home Projects", href: "/residential" },
-  { title: "Commercial Projects", href: "/commercial" },
+  { title: "Kitchen Projects", href: "/services/kitchen" },
+  { title: "Bathroom Projects", href: "/services/bathroom" },
+  { title: "Basement Projects", href: "/services/basement" },
+  { title: "Residential / Full Home Projects", href: "/services/residential" },
+  { title: "Commercial Projects", href: "/services/commercial" },
 ];
 
 export default function ProjectsPage() {
