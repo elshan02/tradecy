@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 };
 
 const handymanReviews: ManualReview[] = [
-  {
-    author: "Sarah O'Connor",
-    date: "Google Review",
-    rating: 5,
-    text: "Tradecy Handyman Services did a great job with my handyman project. Very professional and reliable—thank you!"
-  },
+  // {
+  //   author: "Sarah O'Connor",
+  //   date: "Google Review",
+  //   rating: 5,
+  //   text: "Tradecy Handyman Services did a great job with my handyman project. Very professional and reliable—thank you!"
+  // },
   // {
   //   author: "[Client Name 2]",
   //   date: "Google Review",

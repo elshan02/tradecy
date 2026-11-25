@@ -28,35 +28,42 @@ const ALL_SERVICES = [
   {
     id: "basement",
     title: "Basement Renovations",
-    href: "/basement",
+    href: "/services/basement",
     summary:
       "Basement finishing, family rec rooms, extra bedrooms, 3-piece bathrooms, and legal suites.",
   },
   {
-    id: "full-home",
-    title: "Full Home Renovations",
-    href: "/residential",
+    id: "laundry",
+    title: "Laundry Renovations",
+    href: "/services/laundry",
     summary:
-      "Complete interior remodeling, structural framing, hardwood/LVP flooring, drywall, and trim carpentry.",
+      "Custom laundry room renovations in London, Ontario including cabinetry, countertops, sinks, and lighting.",
   },
   {
-    id: "commercial",
-    title: "Commercial Renovations",
-    href: "/commercial",
+    id: "handyman",
+    title: "Handyman Services",
+    href: "/services/handyman",
     summary:
-      "Retail fit-outs, office build-outs, steel-stud framing, acoustic ceilings, and washrooms.",
+      "Custom handyman projects in London, Ontario including layout redesign, custom cabinetry, quartz countertops, islands, tile backsplashes, plumbing, and lighting.",
   },
+  // {
+  //   id: "commercial",
+  //   title: "Commercial Renovations",
+  //   href: "/commercial",
+  //   summary:
+  //     "Retail fit-outs, office build-outs, steel-stud framing, acoustic ceilings, and washrooms.",
+  // },
   {
     id: "painting",
     title: "Interior & Exterior Painting",
-    href: "#painting",
+    href: "/services/painting",
     summary:
       "Wall, ceiling, trim, and door painting, drywall patching, cabinet spraying, and exterior staining.",
   },
   {
     id: "decks-fences",
     title: "Decks & Fences",
-    href: "#decks-fences",
+    href: "/services/decks-fences",
     summary:
       "Custom pressure-treated, cedar, and composite decks, pergolas, and privacy fences in London, ON.",
   },

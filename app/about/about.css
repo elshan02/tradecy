@@ -1,0 +1,151 @@
+/* ==========================================================================
+   About Page Styles (app/about/about.css)
+   Matches the clean alternating split-layout editorial style of tradecy.ca/about
+   ========================================================================== */
+
+.about-page {
+  background-color: var(--bg-white);
+}
+
+/* Centered "About Us" Header Band */
+.about-header {
+  text-align: center;
+  padding: 64px 0 36px;
+  background-color: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-main-title {
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  margin-top: 6px;
+}
+
+.about-title-divider {
+  width: 56px;
+  height: 3px;
+  background-color: var(--accent);
+  margin: 18px auto 0;
+  border-radius: 999px;
+}
+
+/* Alternating Split Sections (Our History & Our Team) */
+.about-section {
+  padding: 72px 0;
+}
+
+.about-section-alt {
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 56px;
+  align-items: center;
+}
+
+/* Reverses image to the right on desktop for Section 2 ("Our Team") */
+.about-split-reverse .about-image-wrap {
+  order: 2;
+}
+
+.about-split-reverse .about-content {
+  order: 1;
+}
+
+/* Photo Container */
+.about-image-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  background-color: #e2e8f0;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+/* Copy Column */
+.about-kicker {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.about-heading {
+  font-size: clamp(1.5rem, 2.8vw, 2.15rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text-main);
+  letter-spacing: -0.015em;
+}
+
+.about-copy {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.about-copy strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.about-inline-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-inline-link:hover {
+  color: var(--accent-hover);
+}
+
+.about-quote {
+  margin-top: 4px;
+  padding-left: 16px;
+  border-left: 3px solid var(--accent);
+  color: var(--text-main);
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Mobile & Tablet Responsive Stacking */
+@media (max-width: 900px) {
+  .about-section {
+    padding: 52px 0;
+  }
+
+  .about-split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-split-reverse .about-image-wrap {
+    order: 0;
+  }
+
+  .about-split-reverse .about-content {
+    order: 0;
+  }
+}

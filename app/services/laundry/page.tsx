@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 };
 
 const laundryReviews: ManualReview[] = [
-  {
-    author: "Sarah O'Connor",
-    date: "November, 2025",
-    rating: 5,
-    text: "Tradecy Handyman Services did a great job with my laundry room renovation. Very professional and reliable—thank you!"
-  },
+  // {
+  //   author: "Sarah O'Connor",
+  //   date: "November, 2025",
+  //   rating: 5,
+  //   text: "Tradecy Handyman Services did a great job with my laundry room renovation. Very professional and reliable—thank you!"
+  // },
   // {
   //   author: "[Client Name 2]",
   //   date: "Google Review",

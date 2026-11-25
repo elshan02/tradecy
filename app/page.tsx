@@ -22,11 +22,23 @@ const SERVICES = [
       "Finished family rec rooms, extra bedrooms, 3-piece bathrooms, wet bars, and legal secondary suites.",
   },
   {
-    title: "Commercial Renovations",
-    href: "/services/commercial",
+    title: "Handyman Services",
+    href: "/services/handyman",
     description:
-      "Office build-outs, retail store remodeling, commercial framing, washrooms, and interior fit-outs.",
+      "Custom handyman projects in London, Ontario including layout redesign, custom cabinetry, quartz countertops, islands, tile backsplashes, plumbing, and lighting.",
   },
+  {
+    title: "Laundry Renovations",
+    href: "/services/laundry",
+    description:
+      "Custom laundry room renovations in London, Ontario including cabinetry, countertops, sinks, and lighting.",
+  },
+  // {
+  //   title: "Commercial Renovations",
+  //   href: "/services/commercial",
+  //   description:
+  //     "Office build-outs, retail store remodeling, commercial framing, washrooms, and interior fit-outs.",
+  // },
   {
     title: "Interior & Exterior Painting",
     href: "/services/painting",
