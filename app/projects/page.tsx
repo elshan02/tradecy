@@ -14,8 +14,10 @@ const CATEGORIES = [
   { title: "Kitchen Projects", href: "/services/kitchen" },
   { title: "Bathroom Projects", href: "/services/bathroom" },
   { title: "Basement Projects", href: "/services/basement" },
-  { title: "Residential / Full Home Projects", href: "/services/residential" },
-  { title: "Commercial Projects", href: "/services/commercial" },
+  { title: "Laundry Projects", href: "/services/laundry" },
+  { title: "Handyman Services", href: "/services/handyman" },
+  { title: "Painting Projects", href: "/services/painting" },
+  { title: "Decks & Fences", href: "/services/decks-fences" },
 ];
 
 export default function ProjectsPage() {
