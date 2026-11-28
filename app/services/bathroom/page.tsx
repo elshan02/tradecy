@@ -30,6 +30,12 @@ const bathroomReviews: ManualReview[] = [
     date: "Google Review",
     rating: 5,
     text: "Reliable, Hardworking and Professional individuals with affordable service. Renovated our bathrooms…excellent",
+  },
+  {
+    author: "Jan Hunter",
+    date: "Google Review",
+    rating: 5,
+    text: "Asir & his team were fantastic to work with. We had two (2!) bathrooms completely renovated and they look absolutely amazing! Asir was very open minded about any small changes partway through the projects and very willing to work with us on any details. His clean up after was also impeccable. For any projects in the future, I am 100% reaching out to Tradecy again ",
   }
 ];
 

@@ -13,24 +13,30 @@ export const metadata: Metadata = {
 };
 
 const handymanReviews: ManualReview[] = [
-  // {
-  //   author: "Sarah O'Connor",
-  //   date: "Google Review",
-  //   rating: 5,
-  //   text: "Tradecy Handyman Services did a great job with my handyman project. Very professional and reliable—thank you!"
-  // },
-  // {
-  //   author: "[Client Name 2]",
-  //   date: "Google Review",
-  //   rating: 5,
-  //   text: "[Paste a second handyman project review from Google Maps here]",
-  // },
-  // {
-  //   author: "[Client Name 3]",
-  //   date: "Google Review",
-  //   rating: 5,
-  //   text: "[Paste a third handyman project review from Google Maps here]",
-  // }
+  {
+    author: "Fadi Obeid",
+    date: "Google Review",
+    rating: 5,
+    text: "We hired Asir to install curtain rods and blinds in our living room, and he did an excellent job. He was punctual, professional, and very detail-oriented. He also helped with some minor touch-ups in our powder room and assisted with hanging artwork, making sure everything was properly aligned and secure. His work was efficient, clean, and done with care. We really appreciated his helpful attitude and willingness to go the extra mile. Highly recommend Asir for any home installation or handyman work."
+  },
+  {
+    author: "Falonne Ntelo",
+    date: "Google Review",
+    rating: 5,
+    text: "I’m name is FALONNE and Asir did a great job at my house with my TV and I loved the result his put on two tv’s up for me just in a couple minutes and his was really nice",
+  },
+  {
+    author: "Cory G",
+    date: "Google Review",
+    rating: 5,
+    text: "Fantastic work mounting our TV! A fast professional job and i would recommend Asir if you need yours mounted as well!",
+  },
+  {
+    author: "Nahid Modaressi",
+    date: "Google Review",
+    rating: 5,
+    text: "Their work is excellent and professional, and I am completely satisfied with entrusting them with the TV installation.",
+  }
   
 ];
 

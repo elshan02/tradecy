@@ -95,6 +95,7 @@ export default function RootLayout({
                   <Link href="/services/bathroom">Bathroom</Link>
                   <Link href="/services/basement">Basement</Link>
                   <Link href="/services/laundry">Laundry</Link>
+                  <Link href="/services/handyman">Handyman</Link>
                   <Link href="/services/painting">Painting</Link>
                   <Link href="/services/decks-fences">Decks & Fences</Link>
                 </div>
